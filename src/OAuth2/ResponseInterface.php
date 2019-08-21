@@ -22,8 +22,9 @@ interface ResponseInterface
 
     /**
      * @param int $statusCode
+     * @param string|null $text
      */
-    public function setStatusCode($statusCode);
+    public function setStatusCode(int $statusCode, string $text = null);
 
     /**
      * @param int    $statusCode
