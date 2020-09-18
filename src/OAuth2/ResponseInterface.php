@@ -21,10 +21,11 @@ interface ResponseInterface
     public function addHttpHeaders(array $httpHeaders);
 
     /**
-     * @param int $statusCode
+     * @param int $code
      * @param null $text
+     * @return mixed
      */
-    public function setStatusCode(int $statusCode, $text = null);
+    public function setStatusCode(int $code, $text = null);
 
     /**
      * @param int    $statusCode
